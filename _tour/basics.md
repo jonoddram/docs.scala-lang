@@ -335,7 +335,8 @@ What is the difference between val and var?
 Define a named function that returns the concatenation of two strings. 
 <details>
   <summary> Show answer </summary>
-  ```tut
+ 
+  ```
     val concact = (X: String, Y: String) => X + Y
   ```
 </details>
