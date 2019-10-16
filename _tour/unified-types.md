@@ -84,5 +84,5 @@ What do you have to pay attention to when casting value types in Scala?
 <details>
   <summary> Show Answer </summary>
   
-  They may only be automatically cast one way. For example an Integer can automatically be cast to a float but not the other way around. 
+  They can only be automatically cast one way. For example an Integer can automatically be cast to a float but not the other way around. 
 </details>
