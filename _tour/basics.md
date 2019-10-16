@@ -329,6 +329,8 @@ object Main {
 What is the difference between val and var?
 <details>
   <summary> Show answer </summary>
+  
+  
   A val is single assignment only, while a var can be re-assigned. 
 </details>
 
@@ -345,7 +347,7 @@ How are classes, case classes, objects and traits related?
 <details>
   <summary> Show answer </summary>
   
-  * Case classes: Immutable and can be compared easily by value. They can also be instantiated without the new keyword. 
+   * Case classes: Immutable and can be compared easily by value. They can also be instantiated without the new keyword. 
   * An object defines a single instance of a class definition. 
   * Traits can be extended and combined when creating new classes. 
 </details>
