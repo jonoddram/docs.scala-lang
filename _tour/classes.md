@@ -108,3 +108,45 @@ class Point(x: Int, y: Int)
 val point = new Point(1, 2)
 point.x  // <-- does not compile
 ```
+
+## Review Question
+
+Create a class storing an individuals name and age as strings using getter and setter syntax. 
+<details>
+  <summary> Show Answer </summary>
+  
+  
+```tut
+class Person(var initName: String, var initAge: Int) { 
+  private var _name = initName
+  private var _age = initAge
+  
+  def name = _name
+  def name_= (newName : String): Unit = {
+    _name = newName
+  }
+  
+  def age = _age
+  def age_= (newAge : Int): Unit = {
+    _age = newAge
+  }
+}
+
+val jake43 = new Person("Jake", 43)
+println(jake43.name)
+
+// You could set Jakes like this:
+jake43.name_=("Dave")
+println(jake43.name)
+
+// However it is easier like this: 
+jake43.name = "Jake Again"
+println(jake43.name)
+
+// Notice how although jake43 is a value we are still able to 
+// change the variable fields. This is because the identifier
+// jake43 is bound to a specific instance of the Person class,
+// and can not be bound to any other object, but the specific
+// instance is still allowed to have variable fields. 
+```
+</details>
