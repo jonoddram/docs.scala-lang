@@ -79,3 +79,23 @@ animals.append(cat)
 animals.foreach(pet => println(pet.name))  // Prints Harry Sally
 ```
 The `trait Pet` has an abstract field `name` which gets implemented by Cat and Dog in their constructors. On the last line, we call `pet.name` which must be implemented in any subtype of the trait `Pet`.
+
+
+# Review Questions
+
+What is the primary usage of traits? 
+
+<details>
+  <summary> Show Answer </summary>
+  
+  For defining generic types, potentially with abstract methods. The class then acts similarly to Java interfaces. 
+</details>
+
+
+Consider creating an array with consisting of various classes representing different brands of various types of vehicles. Is there any way of using traits so that one can seperate every brand of bicycles from the rest of the list?
+
+<details>
+  <summary> Show Answer </summary>
+  
+  Yes, because the Scala compiler can recognize subclass relationships. By making a Bicycle trait and making every brand of bicycle a subclass of the trait this could be done with a foreach loop like in the pet example. 
+</details>
