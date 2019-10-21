@@ -76,3 +76,24 @@ richStringIter foreach println
 The new class `RichStringIter` has `StringIterator` as a superclass and `RichIterator` as a mixin.
 
 With single inheritance we would not be able to achieve this level of flexibility.
+
+## Review Questions
+
+Give an example of a class hierarchy, one using only single inhertiance and the other also using mixins to highlight the strength of mixins. 
+
+<details>
+  <summary> Show Answer </summary>
+  
+  Let A => B denote that B is a subclass of A
+  Single inheritance: 
+  Given Vehicle class
+  Vehicle => HorsePoweredVehicle
+  HorsePoweredVehicle => FourWheeledHorsePoweredVehicle
+  FourWheeledHorsePoweredVehicle => HorseDrivenCarriage
+  
+  Mixins: 
+  Given Vehicle, HorseDriven, FourWheeled classes
+  Vehicle with HorseDriven, FourWheeled => HorseDrivenCarriage
+  
+  Observe how much more general the mixin solution is. 
+</details>
